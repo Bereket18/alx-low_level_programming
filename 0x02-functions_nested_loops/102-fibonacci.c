@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <stdio.h>
 
 /**
@@ -53,3 +54,33 @@ int main(void)
 	return (0);
 }
 >>>>>>> ff8d59dfbf0077cd70d8849252223cbb6977092c
+=======
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	int i;
+	long int fibonacci[50];
+
+	fibonacci[0] = 1;
+	fibonacci[1] = 2;
+	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
+
+	for (i = 2; i < 50; i++)
+	{
+		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+		if (i == 49)
+			printf("%ld\n", fibonacci[i]);
+		else
+			printf("%ld, ", fibonacci[i]);
+	}
+
+	return (0);
+}
+>>>>>>> 0b97fec8b710fa86962222db40467bf6c55c9f55

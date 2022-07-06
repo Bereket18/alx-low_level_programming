@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 
 /**
@@ -34,3 +35,5 @@ j2 = k2 - j2;
 printf("\n");
 return (0);
 }
+=======
+>>>>>>> 0b97fec8b710fa86962222db40467bf6c55c9f55
