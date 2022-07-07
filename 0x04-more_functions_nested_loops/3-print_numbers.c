@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h"
 /**
  * print_numbers - Functions that print number from 0 to 9
@@ -14,3 +15,5 @@ void print_numbers(void)
 	}
 	_putchar('\n');
 }
+=======
+>>>>>>> 944c749b2bf442249d32ddf8177e5efc19e97617
