@@ -1,34 +1,31 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - print a fizzbuzz program
+ * print_triangle - print a triangle
+ * @size: number of lines.
  *
- * Return: 0
+ * Return:0
  */
-int main(void)
+void print_triangle(int size)
 {
-	int n;
+	int a, b, c;
 
-	n = 1;
-	printf("%d", n);
-	for (n = 2; n <= 100; n++)
+	if (size <= 0)
 	{
-		if ((n % 3 == 0) && (n % 5 == 0))
+		_putchar('\n');
+	}
+	else
+	{
+		for (a = 0; a < size; a++)
 		{
-			printf(" FizzBuzz");
-		}
-		else if (n % 3 == 0)
-		{
-			printf(" Fizz");
-		}
-		else if (n % 5 == 0)
-		{
-			printf(" Buzz");
-		}
-		else
-		{
-			printf(" %d", n);
+			for (b = size - a; b > 1; b--)
+			{
+				_putchar(32);
+			}
+			for (c = 0; c <= a; c++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
 		}
 	}
-	printf("\n");
-	return (0);
 }
