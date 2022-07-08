@@ -1,28 +1,21 @@
-#include "holberton.h"
-#include <stdio.h>
-
+#include "main.h"
 /**
- * more_numbers - Print numbers between 0 to 14 incl.
+ * more_numbers - print 10 times the number from 0 to 15
  *
- * Return: Void.
+ * Return: 0
  */
 void more_numbers(void)
 {
-	int i;
-	int x;
+	int a, b;
 
-	for (x = 0; x < 10; x++)
+	for (a = 0; a < 10; a++)
 	{
-		i = 0;
-		while (i <= 14)
+		for (b = 0; b < 15; b++)
 		{
-			if (i >= 10)
-			{
-				_putchar(i / 10 + '0');
-			}
-				_putchar(i % 10 + '0');
-			i++;
+			if (b >= 10)
+				_putchar((b / 10) + 48);
+			_putchar((b % 10) + 48);
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
